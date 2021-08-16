@@ -1,0 +1,20 @@
+<h1>Post Add/Edit</h1>
+<form [formGroup]="form">
+  <div class="form-group">
+    <label>Title</label><br />
+    <input type="text" class="form-control" formControlName="title" /><br />
+  </div>
+  <div class="form-group">
+    <label>Description</label><br />
+    <textarea class="form-control" formControlName="description"> </textarea
+    ><br />
+  </div>
+  <div class="form-group">
+    <label>Image Path</label><br />
+    <textarea class="form-control" formControlName="imagePath"> </textarea
+    ><br />
+  </div>
+  <!--a routerLink="/post-list"><button class="btn btn-success" (click)="onSubmit()"> Save </button></a-->
+  <button class="btn btn-success" (click)="onSubmit()">Save</button> |
+  <button class="btn btn-primary">Clear</button>
+</form>
